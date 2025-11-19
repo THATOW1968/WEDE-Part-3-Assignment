@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Correct way to set charset -->
+  <meta name="description" content="Glamour Nails Studio">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Beauty on Every Nail">
+  <meta name="author" content="Thato Maipato">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Images/image 2.JFIF" alt="Logo" style="width:50px;height:60px;">
+        <div class="brand-text">
+          <h1>Glamour Nails Studio</h1>
+        </div>
+      </div>
+
+      <input type="checkbox" id="menu-toggle">
+      <label class="hamburger" for="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <div class="nav-links">
+        <a href="Home Page.html">Home</a>
+        <a href="About Us.html">About Us</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Products and Services.html">Products & Services</a>
+        <a href="Enquiry.html">Enquiry</a>
+        <a href="Contact Us.html">Contact Us</a>
+		<a href="Register User.html">Register User</a>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Main -->
+  <main>
+    <h2>Register User</h2>
+    <form id="registerForm">
+	<div class="field">
+      <label for="name">Full Name*:</label>
+      	  <div class ="error" id="nameError"></div>
+<input type="text" id="name" name="name" required minlength ="2">
+	  </div>
+	  
+      <div class="field">
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+	  <div class ="error" id="emailError"></div>
+	  </div>
+	  
+      <div class="field">
+      <label for="password">Password*:</label>
+      <input type="password" id="password" name="password" required minlength="8">
+	  <div class ="error" id="passwordError"></div>
+	  </div>
+
+      <input type="submit" value="Submit">
+    </form>
+
+    <p id="responseMessage" style="color: black; font-weight: bold; display: none;"></p>
+  </main>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="footer-info">
+      <p>&copy; ST10474755</p>
+      <p>197 Smit St, Fairland, Randburg, 2195</p>
+      <p>All rights reserved.</p>
+	  <p id="footerDateTime"></p>
+    </div>
+  </footer>
+</body>
+</html>
